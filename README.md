@@ -13,6 +13,6 @@ CNN:  https://colab.research.google.com/drive/1TDousKvYr_4-dGnEgEkeZsdUotvLuwlz?
 
 Testing dataset:  https://drive.google.com/drive/folders/1gBZuEj64Cfrr_Si6jMhaI-ZmrLfcJcE4?usp=sharing  (this data was used in the Video)
 
-Testing Video: https://drive.google.com/file/d/17TdJHJhcdUZnDX2sggJohNqJ3f-FTASo/view?usp=sharing
+Video Demonstration: https://drive.google.com/file/d/17TdJHJhcdUZnDX2sggJohNqJ3f-FTASo/view?usp=sharing
 
 
