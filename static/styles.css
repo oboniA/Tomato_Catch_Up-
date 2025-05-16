@@ -1,0 +1,97 @@
+/* styles for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b9e299;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fixed-logo-container {
+    position: fixed;
+    top: 10px;
+    left: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.logo {
+width: 100px;
+height: 100px;
+margin: 0; 
+}
+
+.logo-text {
+font-size: 1.8rem;
+font-weight: 900; 
+color: #9c0909;
+white-space: nowrap;
+}
+
+/* container for form and classification results */
+.container {
+    margin-top: 100px;  /* give space below logo */
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 1500px;
+    text-align: center;
+}
+
+/* header */
+h1 {
+    color: #9c0909;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+/* label for an image file input */
+label {
+    font-size: 30px;
+    color: #9c0909;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* input field for an image file */
+input[type="file"] {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Classify button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+/* This CSS code is generated with AI Assistance (ChatGPT)
+   Modeified by the Student */
