@@ -1,0 +1,23 @@
+ML
+https://github.com/bnsreenu/python_for_microscopists/blob/master/158b_transfer_learning_using_CNN_weights_VGG16_RF.py
+https://stackoverflow.com/questions/65851403/vgg16-with-other-input-shape-and-imagenet-weights
+https://www.youtube.com/watch?v=Fxy6WTnUIww
+https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
+https://medium.com/@prabowoyogawicaksana/hyperparameter-optimization-random-forest-classifier-550fd5ed8e14
+
+CNN
+https://github.com/amitjha11/Plant-Disease-Detection-Using-VGG16/blob/master/plant-disease-detection-using-vgg16.ipynb
+https://stackoverflow.com/questions/69783897/compute-class-weight-function-issue-in-sklearn-library-when-used-in-keras-cl
+https://scikit-learn.org/dev/modules/generated/sklearn.utils.class_weight.compute_class_weight.html
+https://stackoverflow.com/questions/65851403/vgg16-with-other-input-shape-and-imagenet-weights
+https://www.youtube.com/watch?v=Fxy6WTnUIww
+https://towardsdatascience.com/fine-tuning-pre-trained-model-vgg-16-1277268c537f
+https://www.digitalocean.com/community/tutorials/hyperparameter-optimization-with-keras-tuner
+https://medium.com/swlh/hyperparameter-tuning-in-keras-tensorflow-2-with-keras-tuner-randomsearch-hyperband-3e212647778f
+https://machinelearningmastery.com/how-to-reduce-overfitting-in-deep-learning-with-weight-regularization/
+https://www.kaggle.com/code/mukeshmanral/using-kerastuner-dropout
+https://medium.com/@piyushkashyap045/mastering-hyperparameter-tuning-for-neural-networks-with-keras-tuner-c0b64d549188#:~:text=Keras%20Tuner%20is%20a%20library,tuning%20for%20deep%20learning%20models.
+
+
+HTML, CSS codes are AI generated; modified by the author.
+The logo is AI generated with user prompt. 
