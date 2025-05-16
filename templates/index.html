@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TomatoCatchUp Homepage</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/png">
+</head>
+
+
+<body>
+
+    <!-- Logo -->
+    <div class="fixed-logo-container">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+        <span class="logo-text">TomatoCatchUp</span>
+    </div> 
+
+    <div class="container">
+
+        <h1>Tomato Leaf Disease Classifier</h1>
+
+        <!--form for user to upload image-->
+        <form id="upload-form" action="/classify" method="POST" enctype="multipart/form-data">
+            <label for="image">Upload an image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <button type="submit">Classify</button>  
+        </form>
+
+        <div id="result"> 
+            <!-- result display panel-->
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('upload-form').onsubmit = async function(event) {
+            event.preventDefault();  // prevents default form submission
+            console.log("Form submitted"); 
+
+            // form object to handle input image file
+            const form = new FormData();  
+            const fileField = document.querySelector('input[type="file"]'); // gets file input
+            form.append('image', fileField.files[0]);  // appends uploaded image to form object
+
+            // send form to backend using fetch API: POST
+            const response = await fetch('/classify', {
+                method: 'POST',  // request to "/classify" endpoint of backend
+                body: form  
+            });
+
+            // ----------------------------Modified------------------------------------
+            // handles response from backend
+            const result = await response.json();  // "result" from app.py
+            console.log("Response received:", result); 
+            
+            // 
+            if (result.prediction) {
+                // prediction and disease details from JSON response of backend
+                const web_content = `
+                    <h2>Leaf Health: ${result.prediction}</h2>
+                    <p><strong>Description:</strong> ${result.description}</p>
+                    <p><strong>Symptoms:</strong> ${result.symptoms}</p>
+                    <p><strong>Prevention:</strong> ${result.prevention}</p>
+                    <p><strong>Treatment:</strong> ${result.treatment}</p>
+                    <p><strong>Read More:</strong><a href="${result.read_more}" target="_blank">Click here for more Info</a></p>
+                `;
+                document.getElementById('result').innerHTML = web_content;
+            } else {
+                document.getElementById('result').innerHTML = 'Error: classification failed';
+            }
+        };
+    </script>
+</body>
+</html>
+
+
+
+<!-- the structure of this HTLM Code was generated with the assistance is of AI (ChatGPT)
+     JSON Response section is Modified by the Student-->
